@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Ishtiak Mahmood</title>
+  <style>
+    :root {
+      --neon: #00ffff;
+      --bg: #000000;
+      --text: #e0e0e0;
+    }
+    
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    h1, h2, h3 {
+      color: var(--neon);
+      text-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
+      margin-top: 0;
+    }
+
+    a {
+      color: var(--neon);
+      text-decoration: none;
+      transition: text-shadow 0.3s;
+    }
+
+    a:hover, .active {
+      text-shadow: 0 0 12px var(--neon);
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      border-bottom: 1px solid var(--neon);
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 6px -6px var(--neon);
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      border: 1px solid rgba(0, 255, 255, 0.3);
+      border-radius: 8px;
+      padding: 1.5rem;
+      transition: all 0.3s ease;
+      background: rgba(0, 255, 255, 0.02);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      border-color: var(--neon);
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+      transform: translateY(-2px);
+    }
+
+    .card p {
+      flex-grow: 1;
+      font-size: 0.95rem;
+    }
+
+    .tags {
+      margin-bottom: 1rem;
+    }
+
+    .tags span {
+      display: inline-block;
+      border: 1px solid var(--neon);
+      padding: 0.2rem 0.6rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      margin: 0.2rem 0.2rem 0 0;
+      color: var(--neon);
+      background: rgba(0, 255, 255, 0.05);
+    }
+
+    .links {
+      display: flex;
+      gap: 1rem;
+      font-weight: bold;
+      margin-top: auto;
+    }
+
+    footer {
+      text-align: center;
+      border-top: 1px solid rgba(0, 255, 255, 0.3);
+      padding-top: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Ishtiak Mahmood</h1>
+      <p>Full-Stack Developer | ICT Engineering Student</p>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html" class="active" style="border-bottom: 1px solid var(--neon); padding-bottom: 2px;">Projects</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="projects">
+        <h2>My Projects</h2>
+        <div class="grid">
+          
+          <div class="card">
+            <h3>SimpliFile</h3>
+            <p>A Flutter open-source file manager app based on Material 3 Expressive design system.</p>
+            <div class="tags">
+              <span>Flutter</span> <span>Dart</span> <span>Android</span>
+            </div>
+            <div class="links">
+              <a href="https://github.com/IshtiAK47/simplifile/releases/tag/flutter" target="_blank">Demo</a>
+              <a href="https://github.com/IshtiAK47/simplifile" target="_blank">GitHub</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Project IPP</h3>
+            <p>Web application featuring MBTI personality test and JoJo Stand reveal quiz, powered by Gemini API.</p>
+            <div class="tags">
+              <span>Next.js</span> <span>React</span> <span>TypeScript</span> <span>Gemini API</span>
+            </div>
+            <div class="links">
+              <a href="https://ipp-blue.vercel.app/" target="_blank">Demo</a>
+              <a href="https://github.com/IshtiAK47/IPP" target="_blank">GitHub</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>FlappyDoggo (Web)</h3>
+            <p>Flappy Bird-inspired browser game with day/night cycle, custom music, and hidden "Pookie" mode.</p>
+            <div class="tags">
+              <span>HTML5</span> <span>CSS3</span> <span>JavaScript</span>
+            </div>
+            <div class="links">
+              <a href="https://ishtiak47.github.io/FlappyDoggo/" target="_blank">Demo</a>
+              <a href="https://github.com/IshtiAK47/FlappyDoggo" target="_blank">GitHub</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>FlappyDoggo (Mobile)</h3>
+            <p>Mobile game built with Flutter featuring smooth controls, immersive audio, and dynamic visuals.</p>
+            <div class="tags">
+              <span>Flutter</span> <span>Dart</span> <span>Mobile</span>
+            </div>
+            <div class="links">
+              <a href="https://github.com/IshtiAK47/FlappyDoggoGame/releases/tag/Android" target="_blank">Demo</a>
+              <a href="https://github.com/IshtiAK47/FlappyDoggoGame" target="_blank">GitHub</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>AniMerit</h3>
+            <p>Modern anime discovery app displaying top 10 airing series and movies using Jikan API.</p>
+            <div class="tags">
+              <span>Next.js</span> <span>TypeScript</span> <span>Tailwind CSS</span>
+            </div>
+            <div class="links">
+              <a href="https://ani-merit.vercel.app/" target="_blank">Demo</a>
+              <a href="https://github.com/IshtiAK47/AniMerit" target="_blank">GitHub</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>UnSin</h3>
+            <p>Quiz-based app revealing which of the seven deadly sins users align with, powered by Gemini AI.</p>
+            <div class="tags">
+              <span>Next.js</span> <span>TypeScript</span> <span>Firebase</span> <span>Gemini API</span>
+            </div>
+            <div class="links">
+              <a href="https://un-sin.vercel.app/" target="_blank">Demo</a>
+              <a href="https://github.com/IshtiAK47/UnSin" target="_blank">GitHub</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Sligga</h3>
+            <p>AI-powered presentation generator that automatically creates formatted PowerPoints with intelligent content.</p>
+            <div class="tags">
+              <span>Next.js</span> <span>React</span> <span>TypeScript</span> <span>Gemini API</span>
+            </div>
+            <div class="links">
+              <a href="https://sligga.vercel.app/" target="_blank">Demo</a>
+              <a href="https://github.com/IshtiAK47/Sligga" target="_blank">GitHub</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>PyPy</h3>
+            <p>Interactive Python learning platform with 10 comprehensive modules, 40+ exercises, 100+ quiz questions, and real-time code validation.</p>
+            <div class="tags">
+              <span>Python</span> <span>Flask</span> <span>JavaScript</span> <span>Education</span>
+            </div>
+            <div class="links">
+              <a href="https://github.com/IshtiAK47/PyPy" target="_blank">Demo</a>
+              <a href="https://github.com/IshtiAK47/PyPy" target="_blank">GitHub</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Tamago</h3>
+            <p>Beautifully designed egg boiling timer with heat source modes, live color transitions, and real-time progress tracking.</p>
+            <div class="tags">
+              <span>React</span> <span>Vite</span> <span>Framer Motion</span> <span>Tailwind CSS</span>
+            </div>
+            <div class="links">
+              <a href="https://tamago-lovat.vercel.app/" target="_blank">Demo</a>
+              <a href="https://github.com/IshtiAK47/Tamago" target="_blank">GitHub</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Ishtiak Mahmood.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
