@@ -208,6 +208,38 @@ h2 {
   max-width: 72ch;
 }
 
+.about-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 340px);
+  grid-template-areas: 'text photo';
+  gap: clamp(1rem, 2.6vw, 1.7rem);
+  align-items: center;
+}
+
+.about-photo-wrap {
+  grid-area: photo;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-photo {
+  width: min(100%, 340px);
+  aspect-ratio: 1195 / 865;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+  border: 1px solid rgba(95, 208, 255, 0.5);
+  box-shadow: 0 16px 34px rgba(2, 8, 24, 0.55);
+  background: #ffffff;
+}
+
+.about-layout .intro-text {
+  grid-area: text;
+  margin: 0;
+}
+
 .cta-row,
 .links {
   display: flex;
@@ -322,9 +354,26 @@ footer {
   font-size: 0.92rem;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 540px) {
   .container {
     width: min(1120px, calc(100% - 1rem));
+  }
+
+  .about-layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'text'
+      'photo';
+    justify-items: stretch;
+    text-align: left;
+  }
+
+  .about-photo {
+    width: min(100%, 320px);
+  }
+
+  .about-photo-wrap {
+    justify-content: flex-start;
   }
 
   .site-header {
