@@ -4,100 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ishtiak Mahmood | Portfolio</title>
-  <style>
-    :root {
-      --neon: #00ffff;
-      --bg: #000000;
-      --text: #e0e0e0;
-    }
-    
-    body {
-      background-color: var(--bg);
-      color: var(--text);
-      font-family: system-ui, -apple-system, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
-
-    h1, h2, h3 {
-      color: var(--neon);
-      text-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
-      margin-top: 0;
-    }
-
-    a {
-      color: var(--neon);
-      text-decoration: none;
-      transition: text-shadow 0.3s;
-    }
-
-    a:hover, .active {
-      text-shadow: 0 0 12px var(--neon);
-    }
-
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      border-bottom: 1px solid var(--neon);
-      padding-bottom: 1rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 4px 6px -6px var(--neon);
-    }
-
-    section {
-      margin-bottom: 3rem;
-    }
-
-    .hero-text {
-      font-size: 1.1rem;
-      max-width: 700px;
-      margin-bottom: 2rem;
-    }
-
-    .links {
-      display: flex;
-      gap: 1rem;
-      font-weight: bold;
-    }
-
-    .btn {
-      display: inline-block;
-      border: 1px solid var(--neon);
-      padding: 0.6rem 1.2rem;
-      border-radius: 4px;
-      background: rgba(0, 255, 255, 0.05);
-      transition: all 0.3s ease;
-    }
-
-    .btn:hover {
-      background: rgba(0, 255, 255, 0.15);
-      transform: translateY(-2px);
-    }
-
-    footer {
-      text-align: center;
-      border-top: 1px solid rgba(0, 255, 255, 0.3);
-      padding-top: 2rem;
-      font-size: 0.9rem;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <div class="container">
-    <header>
-      <h1>Ishtiak Mahmood</h1>
-      <p>Full-Stack Developer | ICT Engineering Student</p>
-      <nav>
-        <a href="index.html" class="active" style="border-bottom: 1px solid var(--neon); padding-bottom: 2px;">Home</a>
+    <header class="site-header">
+      <div class="brand">
+        <h1>Ishtiak Mahmood</h1>
+        <p>Full-Stack Developer | ICT Engineering Student</p>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html" class="active">Home</a>
         <a href="about.html">About Me</a>
         <a href="skills.html">Skills</a>
         <a href="projects.html">Projects</a>
@@ -106,25 +24,63 @@
     </header>
 
     <main>
-      <section id="home">
-        <h2>Welcome to my Terminal</h2>
+      <section id="home" class="panel">
+        <h2 class="hero-title">Crafting Immersive Digital Products</h2>
         <p class="hero-text">
           Hello! I build web and mobile applications with a focus on clean design, useful features, and practical problem solving. I am currently studying ICT Engineering and constantly expanding my technical toolkit.
         </p>
-        <div class="links" style="margin-bottom: 4rem;">
+        <div class="cta-row">
           <a href="projects.html" class="btn">View My Projects</a>
-          <a href="about.html" class="btn">Read My Bio</a>
+          <a href="about.html" class="btn outline">Read My Bio</a>
         </div>
       </section>
 
-      <section id="contact">
+      <section id="site-brief" class="panel">
+        <h2>Explore This Site</h2>
+        <p class="lead">A quick guide to each section of my portfolio.</p>
+        <div class="grid">
+          <article class="card">
+            <h3>About Me</h3>
+            <p>Learn about my background, education, and growth journey as an ICT Engineering student and developer.</p>
+            <div class="links">
+              <a href="about.html">Open About Page</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Skills</h3>
+            <p>See the technologies and tools I use, from programming languages to frameworks, backend services, and developer tools.</p>
+            <div class="links">
+              <a href="skills.html">Open Skills Page</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Projects</h3>
+            <p>Browse featured projects with screenshots, tech stacks, and links to live demos and GitHub repositories.</p>
+            <div class="links">
+              <a href="projects.html">Open Projects Page</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Contact</h3>
+            <p>Want to collaborate, ask questions, or connect professionally? Visit the contact section with direct links.</p>
+            <div class="links">
+              <a href="#contact">Jump to Contact</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="panel">
         <h2>Contact</h2>
-        <p>Ready to collaborate or just want to say hi?</p>
+        <p class="lead">Ready to collaborate or just want to say hi?</p>
         <p>Email: <a href="mailto:m64445.0@gmail.com">m64445.0@gmail.com</a></p>
         <p>Location: Chandpur, Bangladesh</p>
-        <div class="links" style="margin-top: 1.5rem;">
-          <a href="https://github.com/ishtiak47" target="_blank" class="btn">GitHub</a>
-          <a href="https://linkedin.com/in/ishtiak47" target="_blank" class="btn">LinkedIn</a>
+        <div class="links">
+          <a href="https://github.com/ishtiak47" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://linkedin.com/in/ishtiak47" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </section>
     </main>

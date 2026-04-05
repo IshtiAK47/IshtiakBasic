@@ -4,127 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Skills | Ishtiak Mahmood</title>
-  <style>
-    :root {
-      --neon: #00ffff;
-      --bg: #000000;
-      --text: #e0e0e0;
-    }
-    
-    body {
-      background-color: var(--bg);
-      color: var(--text);
-      font-family: system-ui, -apple-system, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
-
-    h1, h2, h3 {
-      color: var(--neon);
-      text-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
-      margin-top: 0;
-    }
-
-    a {
-      color: var(--neon);
-      text-decoration: none;
-      transition: text-shadow 0.3s;
-    }
-
-    a:hover, .active {
-      text-shadow: 0 0 12px var(--neon);
-    }
-
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      border-bottom: 1px solid var(--neon);
-      padding-bottom: 1rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 4px 6px -6px var(--neon);
-    }
-
-    section {
-      margin-bottom: 3rem;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .card {
-      border: 1px solid rgba(0, 255, 255, 0.3);
-      border-radius: 8px;
-      padding: 1.5rem;
-      transition: all 0.3s ease;
-      background: rgba(0, 255, 255, 0.02);
-      display: flex;
-      flex-direction: column;
-    }
-
-    .card:hover {
-      border-color: var(--neon);
-      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
-      transform: translateY(-2px);
-    }
-
-    .card p {
-      flex-grow: 1;
-      font-size: 0.95rem;
-      margin-bottom: 1rem;
-    }
-
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-    }
-
-    .tags span {
-      display: inline-block;
-      border: 1px solid var(--neon);
-      padding: 0.4rem 0.8rem;
-      border-radius: 20px;
-      font-size: 0.85rem;
-      color: var(--neon);
-      background: rgba(0, 255, 255, 0.05);
-    }
-
-    footer {
-      text-align: center;
-      border-top: 1px solid rgba(0, 255, 255, 0.3);
-      padding-top: 2rem;
-      font-size: 0.9rem;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <div class="container">
-    <header>
-      <h1>Ishtiak Mahmood</h1>
-      <p>Full-Stack Developer | ICT Engineering Student</p>
-      <nav>
+    <header class="site-header">
+      <div class="brand">
+        <h1>Ishtiak Mahmood</h1>
+        <p>Full-Stack Developer | ICT Engineering Student</p>
+      </div>
+      <nav class="site-nav">
         <a href="index.html">Home</a>
         <a href="about.html">About Me</a>
-        <a href="skills.html" class="active" style="border-bottom: 1px solid var(--neon); padding-bottom: 2px;">Skills</a>
+        <a href="skills.html" class="active">Skills</a>
         <a href="projects.html">Projects</a>
         <a href="index.html#contact">Contact</a>
       </nav>
     </header>
 
     <main>
-      <section id="skills">
+      <section id="skills" class="panel">
         <h2>Technical Skills</h2>
         <div class="grid">
           

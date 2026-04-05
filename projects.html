@@ -4,136 +4,45 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects | Ishtiak Mahmood</title>
-  <style>
-    :root {
-      --neon: #00ffff;
-      --bg: #000000;
-      --text: #e0e0e0;
-    }
-    
-    body {
-      background-color: var(--bg);
-      color: var(--text);
-      font-family: system-ui, -apple-system, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
-
-    h1, h2, h3 {
-      color: var(--neon);
-      text-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
-      margin-top: 0;
-    }
-
-    a {
-      color: var(--neon);
-      text-decoration: none;
-      transition: text-shadow 0.3s;
-    }
-
-    a:hover, .active {
-      text-shadow: 0 0 12px var(--neon);
-    }
-
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      border-bottom: 1px solid var(--neon);
-      padding-bottom: 1rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 4px 6px -6px var(--neon);
-    }
-
-    section {
-      margin-bottom: 3rem;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .card {
-      border: 1px solid rgba(0, 255, 255, 0.3);
-      border-radius: 8px;
-      padding: 1.5rem;
-      transition: all 0.3s ease;
-      background: rgba(0, 255, 255, 0.02);
-      display: flex;
-      flex-direction: column;
-    }
-
-    .card:hover {
-      border-color: var(--neon);
-      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
-      transform: translateY(-2px);
-    }
-
-    .card p {
-      flex-grow: 1;
-      font-size: 0.95rem;
-    }
-
-    .tags {
-      margin-bottom: 1rem;
-    }
-
-    .tags span {
-      display: inline-block;
-      border: 1px solid var(--neon);
-      padding: 0.2rem 0.6rem;
-      border-radius: 20px;
-      font-size: 0.75rem;
-      margin: 0.2rem 0.2rem 0 0;
-      color: var(--neon);
-      background: rgba(0, 255, 255, 0.05);
-    }
-
-    .links {
-      display: flex;
-      gap: 1rem;
-      font-weight: bold;
-      margin-top: auto;
-    }
-
-    footer {
-      text-align: center;
-      border-top: 1px solid rgba(0, 255, 255, 0.3);
-      padding-top: 2rem;
-      font-size: 0.9rem;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <div class="container">
-    <header>
-      <h1>Ishtiak Mahmood</h1>
-      <p>Full-Stack Developer | ICT Engineering Student</p>
-      <nav>
+    <header class="site-header">
+      <div class="brand">
+        <h1>Ishtiak Mahmood</h1>
+        <p>Full-Stack Developer | ICT Engineering Student</p>
+      </div>
+      <nav class="site-nav">
         <a href="index.html">Home</a>
         <a href="about.html">About Me</a>
         <a href="skills.html">Skills</a>
-        <a href="projects.html" class="active" style="border-bottom: 1px solid var(--neon); padding-bottom: 2px;">Projects</a>
+        <a href="projects.html" class="active">Projects</a>
         <a href="index.html#contact">Contact</a>
       </nav>
     </header>
 
     <main>
-      <section id="projects">
+      <section id="projects" class="panel">
         <h2>My Projects</h2>
         <div class="grid">
+
+          <div class="card">
+            <img class="project-image" src="https://raw.githubusercontent.com/IshtiAK47/Student-Nutrition-Fitness-Tracker/refs/heads/master/Lab%20Manual(Report)%20and%20Presentation/Picture1.png" alt="Student Nutrition and Fitness Tracker screenshot" loading="lazy">
+            <h3>Student Nutrition &amp; Fitness Tracker</h3>
+            <p>A comprehensive database management system for tracking student nutrition intake and fitness records in a university canteen environment. Group project with 4 members.</p>
+            <div class="tags">
+              <span>DBMS</span> <span>SQL</span> <span>Database</span> <span>Team Project</span>
+            </div>
+            <div class="links">
+              <a href="https://github.com/IshtiAK47/Student-Nutrition-Fitness-Tracker" target="_blank">Demo</a>
+              <a href="https://github.com/IshtiAK47/Student-Nutrition-Fitness-Tracker" target="_blank">GitHub</a>
+            </div>
+          </div>
           
           <div class="card">
+            <img class="project-image" src="https://raw.githubusercontent.com/IshtiAK47/simplifile/refs/heads/main/pngegg(4).png" alt="SimpliFile project screenshot" loading="lazy">
             <h3>SimpliFile</h3>
             <p>A Flutter open-source file manager app based on Material 3 Expressive design system.</p>
             <div class="tags">
@@ -146,6 +55,7 @@
           </div>
 
           <div class="card">
+            <img class="project-image" src="https://raw.githubusercontent.com/IshtiAK47/FlappyDoggoGame/refs/heads/main/icon/ipp.png" alt="Project IPP screenshot" loading="lazy">
             <h3>Project IPP</h3>
             <p>Web application featuring MBTI personality test and JoJo Stand reveal quiz, powered by Gemini API.</p>
             <div class="tags">
@@ -158,6 +68,7 @@
           </div>
 
           <div class="card">
+            <img class="project-image" src="https://raw.githubusercontent.com/IshtiAK47/FlappyDoggo/refs/heads/main/assets/images/bg-pookiee.png" alt="FlappyDoggo web game screenshot" loading="lazy">
             <h3>FlappyDoggo (Web)</h3>
             <p>Flappy Bird-inspired browser game with day/night cycle, custom music, and hidden "Pookie" mode.</p>
             <div class="tags">
@@ -170,6 +81,7 @@
           </div>
 
           <div class="card">
+            <img class="project-image" src="https://raw.githubusercontent.com/IshtiAK47/FlappyDoggoGame/refs/heads/main/icon/fl.png" alt="FlappyDoggo mobile screenshot" loading="lazy">
             <h3>FlappyDoggo (Mobile)</h3>
             <p>Mobile game built with Flutter featuring smooth controls, immersive audio, and dynamic visuals.</p>
             <div class="tags">
@@ -182,6 +94,7 @@
           </div>
 
           <div class="card">
+            <img class="project-image" src="https://raw.githubusercontent.com/IshtiAK47/FlappyDoggoGame/refs/heads/main/icon/anim.png" alt="AniMerit screenshot" loading="lazy">
             <h3>AniMerit</h3>
             <p>Modern anime discovery app displaying top 10 airing series and movies using Jikan API.</p>
             <div class="tags">
@@ -194,6 +107,7 @@
           </div>
 
           <div class="card">
+            <img class="project-image" src="https://raw.githubusercontent.com/IshtiAK47/FlappyDoggoGame/refs/heads/main/icon/unsin.png" alt="UnSin screenshot" loading="lazy">
             <h3>UnSin</h3>
             <p>Quiz-based app revealing which of the seven deadly sins users align with, powered by Gemini AI.</p>
             <div class="tags">
@@ -206,6 +120,7 @@
           </div>
 
           <div class="card">
+            <img class="project-image" src="https://raw.githubusercontent.com/IshtiAK47/FlappyDoggoGame/refs/heads/main/icon/Screenshot%202025-08-21%20171422.png" alt="Sligga screenshot" loading="lazy">
             <h3>Sligga</h3>
             <p>AI-powered presentation generator that automatically creates formatted PowerPoints with intelligent content.</p>
             <div class="tags">
@@ -218,6 +133,7 @@
           </div>
 
           <div class="card">
+            <img class="project-image" src="https://raw.githubusercontent.com/IshtiAK47/PyPy/refs/heads/main/screenshots/1.png" alt="PyPy screenshot" loading="lazy">
             <h3>PyPy</h3>
             <p>Interactive Python learning platform with 10 comprehensive modules, 40+ exercises, 100+ quiz questions, and real-time code validation.</p>
             <div class="tags">
@@ -230,6 +146,7 @@
           </div>
 
           <div class="card">
+            <img class="project-image" src="https://raw.githubusercontent.com/IshtiAK47/Tamago/refs/heads/main/screenshots/1.png" alt="Tamago screenshot" loading="lazy">
             <h3>Tamago</h3>
             <p>Beautifully designed egg boiling timer with heat source modes, live color transitions, and real-time progress tracking.</p>
             <div class="tags">
